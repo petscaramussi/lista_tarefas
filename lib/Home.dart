@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:path_provider/path_provider.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -9,8 +10,17 @@ class _HomeState extends State<Home> {
 
   List _listaTarefas = ["Ir ao mercado", "Estudar", "Exercícios do dia"];
 
+  _salvarArquivo() async{
+
+    final diretorio = await getApplicationDocumentsDirectory();
+    //print("Caminho: " + diretorio.path);
+  }
+
   @override
   Widget build(BuildContext context) {
+
+    _salvarArquivo();
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Lista de tarefas"),
