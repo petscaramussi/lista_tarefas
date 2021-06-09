@@ -29,5 +29,11 @@ after configure your emulator
 start debugging and run
 - flutter run
 
+## About the App
+
+It is a simple app created for someone who wants to create a "to do list". The user's information got in device and after aplication end you can get all informations you created before and their status. Mark conclued and delete task included.
+
+## Screenshots
+
 
 
